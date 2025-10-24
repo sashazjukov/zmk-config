@@ -25,11 +25,7 @@
         compatible = "zmk,keymap";
 
         default_layer {
-            // -----------------------------------------------------------------------------------------
-            // | TAB  |  Q  |  W  |  E  |  R  |    T    |   |  Y  |  U   |  I  |  O  |  P  | ESC |
-            // | CTRL |  A  |  S  |  D  |  F  |    G    |   |  H  |  J   |  K  |  L  |  ;  |  LWR/'   |
-            // | SHFT |  Z  |  X  |  C  |  V  |    B    |   |  N  |  M   |  ,  |  .  |  /  | SHFT |
-            //                    | GUI | LWR | ALT/ENT |   | HYPER/SPC | BKSP  | RSE |
+
 
             bindings = <
 &kp ESCAPE          &kp Q  &kp W  &kp E         &kp R        &kp T           &kp Y      &kp U        &kp I      &kp O    &kp P     &kp BACKSPACE
@@ -40,11 +36,6 @@
         };
 
         layer_below {
-            // -----------------------------------------------------------------------------------------
-            // |      |  !  |  @  |  #  |  $  |    %     |   |  ^  |  &  |  *  |  (  |  )  |   \   |
-            // |      |  1  |  2  |  3  |  4  |    5     |   |  -  |  =  |  `  |  [  |  ]  |  "|"  |
-            // | SHFT |  6  |  7  |  8  |  9  |    0     |   |  _  |  +  |  ~  |  {  |  }  | RSHFT |
-            //                     | GUI |     | ALT/ENT |   | HYPER/SPACE | BKSP |    |
 
             bindings = <
 &kp TILDE  &kp EXCL  &kp AT  &kp HASH  &kp DLLR  &kp PRCNT       &kp CARET  &kp AMPS   &kp KP_MULTIPLY  &kp LPAR  &kp RPAR  &kp BSLH
@@ -55,11 +46,6 @@
         };
 
         layer_above {
-            // -----------------------------------------------------------------------------------------
-            // |       |  F1  |  F2  |  F3  |  F4  |  F5 |            |  F6  |  F7  |  F8  |  F9  |  F10  |   |
-            // |       | Prev | Next | Vol - | Vol + | Play/Pause |   |      | LFT | DWN |  UP | RGT |     |     |
-            // | BTCLR | BT1 | BT2 | BT3 | BT4 | BT5 |   |            |     |     |     |     |     |     |
-            //                    |     |     |    |                  |     |     |     |
 
             bindings = <
 &none   &kp C_MUTE  &kp C_VOLUME_DOWN  &kp C_VOLUME_UP  &kp F11  &kp F12         &none     &kp HOME  &none   &kp END    &kp DEL    &kp BSPC
