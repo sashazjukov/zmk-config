@@ -25,8 +25,6 @@
         compatible = "zmk,keymap";
 
         default_layer {
-
-
             bindings = <
 &kp ESCAPE          &kp Q  &kp W  &kp E         &kp R        &kp T           &kp Y      &kp U        &kp I      &kp O    &kp P     &kp BACKSPACE
 &mt LEFT_SHIFT TAB  &kp A  &kp S  &kp D         &kp F        &kp G           &kp H      &kp J        &kp K      &kp L    &kp SEMI  &mt RIGHT_SHIFT APOS
@@ -36,7 +34,6 @@
         };
 
         layer_below {
-
             bindings = <
 &kp TILDE  &kp EXCL  &kp AT  &kp HASH  &kp DLLR  &kp PRCNT       &kp CARET  &kp AMPS   &kp KP_MULTIPLY  &kp LPAR  &kp RPAR  &kp BSLH
 &trans     &kp N1    &kp N2  &kp N3    &kp N4    &kp N5          &kp MINUS  &kp EQUAL  &kp GRAVE        &kp LBKT  &kp RBKT  &mt RIGHT_SHIFT PIPE
@@ -46,12 +43,11 @@
         };
 
         layer_above {
-
             bindings = <
-&none   &kp C_MUTE  &kp C_VOLUME_DOWN  &kp C_VOLUME_UP  &kp F11  &kp F12         &none     &kp HOME  &none   &kp END    &kp DEL    &kp BSPC
-&trans  &kp F1      &kp F2             &kp F3           &kp F4   &kp F5          &kp LEFT  &kp DOWN  &kp UP  &kp RIGHT  &kp PG_UP  &trans
-&trans  &kp F6      &kp F7             &kp F8           &kp F9   &kp F10         &none     &none     &none   &none      &kp PG_DN  &trans
-                                       &trans           &trans   &kp LEFT_ALT    &trans    &trans    &none
+&none   &kp C_MUTE  &kp C_VOLUME_DOWN  &kp C_VOLUME_UP  &kp F11  &kp F12         &none     &kp HOME    &none   &kp END    &kp DEL    &kp BSPC
+&trans  &kp F1      &kp F2             &kp F3           &kp F4   &kp F5          &kp LEFT  &kp DOWN    &kp UP  &kp RIGHT  &kp PG_UP  &trans
+&trans  &kp F6      &kp F7             &kp F8           &kp F9   &kp F10         &none     &kp DELETE  &none   &none      &kp PG_DN  &trans
+                                       &trans           &trans   &kp LEFT_ALT    &trans    &trans      &none
             >;
         };
 
