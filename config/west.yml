@@ -6,6 +6,6 @@ manifest:
     - name: zmk
       remote: zmkfirmware
       revision: main
-      import: app/west.yml
+      import: app/v0.3.0.yml
   self:
     path: config
