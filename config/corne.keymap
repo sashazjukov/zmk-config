@@ -68,5 +68,11 @@
                            &kp LGUI  &trans  &trans    &trans    &trans  &trans
             >;
         };
+
+        status_layer {
+            zmk,status-layer;
+            display-type = "oled";
+            bindings = <&status_screen>;
+        };
     };
 };

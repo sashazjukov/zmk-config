@@ -1,0 +1,17 @@
+&i2c2 {
+    status = "okay";
+    ssd1306@3c {
+        compatible = "solomon,ssd1306fb-i2c";
+        reg = <0x3c>;
+        width = <128>;
+        height = <32>;
+        segment-remap;
+        page-order = <0>;
+        display-offset = <0>;
+        prechargep = <0x22>;
+    };
+};
+
+&oled {
+    status = "okay";
+};
