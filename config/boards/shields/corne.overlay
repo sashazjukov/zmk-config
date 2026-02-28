@@ -1,0 +1,21 @@
+/ {
+    chosen {
+        zephyr,display = &oled;
+    };
+};
+
+&i2c0 {
+    status = "okay";
+    oled: ssd1306@3c {
+        compatible = "solomon,ssd1306fb";
+        reg = <0x3c>;             // 0x3c typical, change to 0x3d if your module is that address
+        label = "SSD1306";
+        width = <128>;
+        height = <32>;            // 32 if your panel is 128x32
+        segment-offset = <0>;
+        page-offset = <0>;
+        display-offset = <0>;
+        multiplex-ratio = <63>;   // 63 for 64px tall, 31 for 32px
+        /* reset-gpios = <&gpio0 2 GPIO_ACTIVE_LOW>; // optional: only if you have RST wired to MCU */
+    };
+};
