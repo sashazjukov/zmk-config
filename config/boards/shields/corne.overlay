@@ -8,7 +8,7 @@
     status = "okay";
     oled: ssd1306@3c {
         compatible = "solomon,ssd1306fb";
-        reg = <0x3c>;             // 0x3c typical, change to 0x3d if your module is that address
+        reg = <0x3d>;             // 0x3c typical, change to 0x3d if your module is that address
         label = "SSD1306";
         width = <128>;
         height = <32>;            // 32 if your panel is 128x32
